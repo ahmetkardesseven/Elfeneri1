@@ -15,16 +15,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
     }
 
     @IBAction func btn(_ sender: Any) {
-        
+        lighOn.toggle()
        update()
         
         
     }
     func update(){
+        view.backgroundColor = lighOn ? .white : .black
         
+        /*
+     
+     
         lighOn.toggle()
         
         if lighOn {
@@ -35,7 +40,7 @@ class ViewController: UIViewController {
         }else{
             view.backgroundColor = .black
             bntDegistir.setTitle("kapat", for: .normal)
-        }
+        }*/
     }
     
 }

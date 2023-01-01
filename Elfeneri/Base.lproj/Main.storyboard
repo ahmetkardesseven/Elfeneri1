@@ -16,11 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OD-no-30i">
-                                <rect key="frame" x="16" y="70" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OD-no-30i">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
                                     <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5K-kT-7wP"/>
                                 </connections>
@@ -28,6 +27,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9OD-no-30i" secondAttribute="bottom" id="aHz-oF-87L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9OD-no-30i" secondAttribute="trailing" id="c8x-ja-dWw"/>
+                            <constraint firstItem="9OD-no-30i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="feh-yD-Wu3"/>
+                            <constraint firstItem="9OD-no-30i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hWb-H8-7e0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="bntDegistir" destination="9OD-no-30i" id="E48-Hv-Mpi"/>
