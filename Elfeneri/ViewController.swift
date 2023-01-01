@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var bntDegistir: UIButton!
     
     var lighOn = true
 
@@ -28,8 +29,12 @@ class ViewController: UIViewController {
         
         if lighOn {
             view.backgroundColor = .white
+            
+            bntDegistir.setTitle("ac", for: .normal)
+            
         }else{
             view.backgroundColor = .black
+            bntDegistir.setTitle("kapat", for: .normal)
         }
     }
     
